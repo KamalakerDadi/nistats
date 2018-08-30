@@ -122,7 +122,7 @@ class SecondLevelModel(BaseEstimator, TransformerMixin, CacheMixin):
         Parameters
         ----------
         second_level_input: list of `FirstLevelModel` objects or pandas
-                            DataFrame or list of Niimg-like objects.
+            DataFrame or list of Niimg-like objects.
             Giving FirstLevelModel objects will allow to easily compute
             the second level contast of arbitrary first level contrasts thanks
             to the first_level_contrast argument of the compute_contrast
@@ -137,7 +137,7 @@ class SecondLevelModel(BaseEstimator, TransformerMixin, CacheMixin):
             order inconsistencies when extracting the maps. So the rows of the
             automatically computed design matrix, if not provided, will
             correspond to the sorted subject_label column.
- 
+
             If list of Niimg-like objects then this is taken literally as Y
             for the model fit and design_matrix must be provided.
 
@@ -321,7 +321,7 @@ class SecondLevelModel(BaseEstimator, TransformerMixin, CacheMixin):
             The string can be a formula compatible with the linear constraint
             of the Patsy library. Basically one can use the name of the
             conditions as they appear in the design matrix of
-            the fitted model combined with operators /*+- and numbers.
+            the fitted model combined with operators ``/*+-`` and numbers.
             Please check the patsy documentation for formula examples:
             http://patsy.readthedocs.io/en/latest/API-reference.html#patsy.DesignInfo.linear_constraint
 
@@ -331,7 +331,7 @@ class SecondLevelModel(BaseEstimator, TransformerMixin, CacheMixin):
             By default we compute the 'intercept' second level contrast.
 
         first_level_contrast: str or array of shape (n_col) with respect to
-                              FirstLevelModel, optional
+            FirstLevelModel, optional
             In case a list of FirstLevelModel was provided as
             second_level_input, we have to provide a contrast to apply to
             the first level models to get the corresponding list of images

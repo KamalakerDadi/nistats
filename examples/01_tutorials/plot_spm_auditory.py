@@ -220,8 +220,8 @@ nibabel.save(z_map, join('results', 'active_vs_rest_z_map.nii'))
 nibabel.save(eff_map, join('results', 'active_vs_rest_eff_map.nii'))
 
 ###############################################################################
-#  Extract the signal from a voxel
-#  -------------------------------
+# Extract the signal from a voxel
+# -------------------------------
 #
 # We search for the voxel with the larger z-score and plot the signal
 # (warning: this is "double dipping")

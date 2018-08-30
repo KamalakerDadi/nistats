@@ -285,6 +285,7 @@ def make_design_matrix(
     paradigm : DataFrame instance, optional
         Description of the experimental paradigm. The DataFrame instance might
         have those keys:
+
             'onset': column to specify the start time of each events in
                      seconds. An exception is raised if this key is missing.
             'trial_type': column to specify per-event experimental conditions
@@ -296,6 +297,7 @@ def make_design_matrix(
             'modulation': column to specify the amplitude of each
                           events. If missing the default is set to
                           ones(n_events).
+
         A paradigm is considered as valid whenever it has an 'onset' key, if
         this key is missing an exception will be thrown. For the others keys
         only a simple warning will be displayed. A particular attention should

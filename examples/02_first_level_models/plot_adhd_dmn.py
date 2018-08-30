@@ -8,9 +8,12 @@ Posterior Cingulate Cortex data and saving the results.
 More specifically:
 
 1. A sequence of fMRI volumes are loaded
+
 2. A design matrix with the Posterior Cingulate Cortex seed is defined
+
 4. A GLM is applied to the dataset (effect/covariance,
    then contrast estimation)
+
 5. The Default Mode Network is displayed
 
 """
